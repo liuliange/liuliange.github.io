@@ -186,21 +186,21 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-notion的一些使用技巧" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-一个简单的倒计时代码" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/archives/bf22e279.html">notion的一些使用技巧</a>
+      <a class="article-title" href="/archives/f5ccd880.html">一个简单的倒计时代码</a>
     </h1>
   
 
         
         
-<a href="/archives/bf22e279.html" class="archive-article-date">
-  	<time datetime="2022-03-18T03:37:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-18</time>
+<a href="/archives/f5ccd880.html" class="archive-article-date">
+  	<time datetime="2022-03-25T13:19:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-03-25</time>
 </a>
         <!-- 开始添加字数统计-->
 
@@ -234,7 +234,30 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>、<SPAN id=span_dt_dt></SPAN><br><SCRIPT language=javascript></p>
+<!--
+//document.write("");
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("3/25/2022 08:00:00");//这个日期是可以修改的
+today=new Date();
+timeold=(BirthDay.getTime()-today.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=Math.floor(e_hrsold);
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=Math.floor((e_hrsold-hrsold)*60);
+seconds=Math.floor((e_minsold-minsold)*60);
+span_dt_dt.innerHTML="距离新年还有<align=center><p><font color=#A22900><p><font  size=4>"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒"+"<br></font><br></font>" ; // 这里你自己改。就是倒计时的样式，字体大小size=4 颜色是color
+}
+show_date_time();
+//-->
+<p></SCRIPT>、</p>
+
       
       
     <!-- 《添加版权声明 -->
@@ -257,10 +280,21 @@
       
       
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/html//" class="article-tag-list-link color5">html</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/archives/bf22e279.html">展开全文 >></a>
+          <a class="article-more-a" href="/archives/f5ccd880.html">展开全文 >></a>
         </p>
       
 
