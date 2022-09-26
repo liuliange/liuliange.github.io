@@ -17,7 +17,7 @@
 <meta property="og:description" content="yilia一、更换Yilia主题✔️1.在根目录下打开git bash下载yilia主题，执行git clone https:&#x2F;&#x2F;github.com&#x2F;litten&#x2F;hexo-theme-yilia themes&#x2F;yilia命令。 2.更换主题，打开根目录下的_config.yml文件， 1234# Extensions## Plugins: https:&#x2F;&#x2F;hexo.io&#x2F;plugins&#x2F;##">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-09-19T00:57:58.000Z">
-<meta property="article:modified_time" content="2022-09-26T04:52:46.864Z">
+<meta property="article:modified_time" content="2022-09-26T07:33:26.129Z">
 <meta property="article:author" content="榴莲哥">
 <meta property="article:tag" content="前端,javascript,jquery,html5,开发者,程序猿,编程,代码,开源,IT网站,Developer,Geek,html,css,css3,用户体验">
 <meta name="twitter:card" content="summary">
@@ -73,7 +73,7 @@
 		</nav>
 		<nav class="header-smart-menu">
 			<nav class="custom">
-			📚总文章数 8 篇
+			📚总文章数 9 篇
 			</nav>
 		<nav class="header-smart-menu">
     		
@@ -244,7 +244,7 @@
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">yilia</span></span><br></pre></td></tr></table></figure>
 
 <p>将theme后面的默认主题改为yilia主题，也就是由theme: landscape改成theme: yilia，依次执行hexo clean、hexo g、hexo s命令，本地预览。</p>
-<h3 id="二、显示所有文章✔️"><a href="#二、显示所有文章✔️" class="headerlink" title="二、显示所有文章✔️"></a><strong>二、显示所有文章✔️</strong></h3><p>1.先执行npm i hexo-generator-json-content –save命令，然后在根目录_config.yml文件末尾添加以下代码, 保存-本地预览。</p>
+<h3 id="二、显示所有文章✔️"><a href="#二、显示所有文章✔️" class="headerlink" title="二、显示所有文章✔️"></a><strong>二、显示所有文章✔️</strong></h3><p>1.先执行npm i hexo-generator-json-content –save命令，然后在根目录_config.yml文件末尾添加以下代码, 保存-本地预览。<br> <span id="more"></span></p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 配置显示 所有文章</span></span><br><span class="line"><span class="attr">jsonContent:</span></span><br><span class="line"><span class="attr">meta:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">pages:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">posts:</span></span><br><span class="line"><span class="attr">title:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">date:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">path:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">text:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">raw:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">content:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">slug:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">updated:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">comments:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">link:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">excerpt:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">categories:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">tags:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="三、配置图片资源✔️"><a href="#三、配置图片资源✔️" class="headerlink" title="三、配置图片资源✔️"></a><strong>三、配置图片资源✔️</strong></h3><p>1.在themes\yilia\source下面创建一个assets文件夹，接着我们来更改博客头像、打赏图片、站点图标、头像上面的背景、右滑块背景。</p>
@@ -312,7 +312,7 @@
 </blockquote>
 <h3 id="2-编辑SUBNAV"><a href="#2-编辑SUBNAV" class="headerlink" title="2.编辑SUBNAV"></a><strong>2.编辑SUBNAV</strong></h3><p>也就是自己的社交信息，打开themes\yilia_config.yml文件,找到subnav:,添加你想展示给他人看的信息，比如qq，可以添加<a target="_blank" rel="noopener" href="https://wpa.qq.com/msgrd?v=3&uin=">https://wpa.qq.com/msgrd?v=3&amp;uin=</a>&lt;QQ号&gt;&amp;site=qq&amp;menu=yes/，邮箱什么的。不想展示，或者没有的，直接注释掉就行。</p>
 <h3 id="五、Morkdown语法的基本使用✔️"><a href="#五、Morkdown语法的基本使用✔️" class="headerlink" title="五、Morkdown语法的基本使用✔️"></a><strong>五、Morkdown语法的基本使用✔️</strong></h3><p>关于Morkdown语法的基本使用,请各位看官移至<a target="_blank" rel="noopener" href="https://www.kblog.top/post/18839.html">Morkdown语法的基本使用</a>博客观看。‍</p>
-<h3 id="六、文章显示摘要✔️"><a href="#六、文章显示摘要✔️" class="headerlink" title="六、文章显示摘要✔️"></a><strong>六、文章显示摘要✔️</strong></h3><p>1.在需要的位置添加<span id="more"></span>就行了，但保存-预览会发现，有一个 more&gt;&gt;跟一个展示全文&gt;&gt;一样的效果，冲突了。所有我们可以在themes\yilia_config.yml文件里注释掉excerpt_link: more,这样就显示一个展示全文了。</p>
+<h3 id="六、文章显示摘要✔️"><a href="#六、文章显示摘要✔️" class="headerlink" title="六、文章显示摘要✔️"></a><strong>六、文章显示摘要✔️</strong></h3><p>1.在需要的位置添加<!-- more -->就行了，但保存-预览会发现，有一个 more&gt;&gt;跟一个展示全文&gt;&gt;一样的效果，冲突了。所有我们可以在themes\yilia_config.yml文件里注释掉excerpt_link: more,这样就显示一个展示全文了。</p>
 <h3 id="七、文章显示目录导航✔️"><a href="#七、文章显示目录导航✔️" class="headerlink" title="七、文章显示目录导航✔️"></a><strong>七、文章显示目录导航✔️</strong></h3><p>1.这里我没有使用主题自带的，（自认为不好看），但我还是讲下自带的吧，就是只要在themes\yilia_config.yml找到toc参数，将toc: 1改为toc: 2就行了。然后选择自定义的话，先刚才的参数改为0`不显示，因为别冲突嘛；</p>
 <p>2.添加CSS样式</p>
 <p>在themes/yilia/source下面的main.0cf68a.css文件末尾，添加以下代码；(注：main.XXX.css 每人的略有不同)</p>
@@ -461,7 +461,7 @@
 </tr>
 <tr>
 <td>SMTP_USER</td>
-<td><a href="mailto:&#120;&#120;&#x78;&#x78;&#120;&#x78;&#x78;&#x78;&#120;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#109;">&#120;&#120;&#x78;&#x78;&#120;&#x78;&#x78;&#x78;&#120;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#109;</a></td>
+<td><a href="mailto:&#120;&#120;&#x78;&#120;&#120;&#x78;&#x78;&#120;&#x78;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;">&#120;&#120;&#x78;&#120;&#120;&#x78;&#x78;&#120;&#x78;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;</a></td>
 <td>[必填]SMTP登录用户；如果是QQ就直接写你的QQ邮箱</td>
 </tr>
 <tr>
@@ -476,7 +476,7 @@
 </tr>
 <tr>
 <td>SENDER_EMAIL</td>
-<td><a href="mailto:&#120;&#x78;&#120;&#x78;&#120;&#x78;&#x78;&#x78;&#x78;&#64;&#x71;&#113;&#x2e;&#x63;&#111;&#x6d;">&#120;&#x78;&#120;&#x78;&#120;&#x78;&#x78;&#x78;&#x78;&#64;&#x71;&#113;&#x2e;&#x63;&#111;&#x6d;</a></td>
+<td><a href="mailto:&#120;&#120;&#x78;&#120;&#120;&#120;&#120;&#120;&#x78;&#64;&#x71;&#113;&#x2e;&#99;&#111;&#109;">&#120;&#120;&#x78;&#120;&#120;&#120;&#120;&#120;&#x78;&#64;&#x71;&#113;&#x2e;&#99;&#111;&#109;</a></td>
 <td>[必填]发件邮箱</td>
 </tr>
 <tr>
@@ -702,7 +702,7 @@
     2022-09-19 08:09:00
     <br>
     <strong class="update-time">最后更新：</strong>
-    2022-09-26 12:09:86
+    2022-09-26 15:09:12
     <br>
     <strong class="article-titles">本文标题：</strong>
     <a href="https://liuliange.github.io/archives/d81141e6.html" title="yilia主题配置与使用" target="_blank">yilia主题配置与使用</a>
