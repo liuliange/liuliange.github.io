@@ -71,7 +71,7 @@
 		</nav>
 		<nav class="header-smart-menu">
 			<nav class="custom">
-			📚总文章数 9 篇
+			📚总文章数 10 篇
 			</nav>
 		<nav class="header-smart-menu">
     		
@@ -185,6 +185,120 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-RiProV2自定义分类缩略图尺寸" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/archives/d17dfafe.html">RiProV2自定义分类缩略图尺寸</a>
+    </h1>
+  
+
+        
+        
+<a href="/archives/d17dfafe.html" class="archive-article-date">
+  	<time datetime="2022-10-02T07:16:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-10-02</time>
+</a>
+        <!-- 开始添加字数统计-->
+
+  <div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+      <span class="post-meta-item-text">  字数统计: </span>
+      <span class="post-count">821字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="fa fa-clock-o" aria-hidden="true"></i>
+      <span class="post-meta-item-text">  阅读时长: </span>
+      <span class="post-count">4分</span>
+    </span>
+  </span>
+</div>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  
+<!-- 添加完成 -->
+        
+      </header>
+    
+    <!-- 添加导航目录内容 -->
+    
+    <!-- 导航目录内容结束 -->
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>WordPress原本是自带分类缩略图尺寸自定义设置功能的，但是油条把RiPro-V2主题的自定义功能给屏蔽了，今天我们就来叫大家如何开启分类自定义缩略图尺寸，这样我们就可以自定义没一个分类实现不一样的尺寸了。</p>
+<p>开启方法<br>修改：ripro-v2\ripro-v2\inc\options\taxonomy-options.php将注释去掉。原始如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">array(</span><br><span class="line">    &#x27;id&#x27;      =&gt; &#x27;is_no_archive_filter&#x27;,</span><br><span class="line">    &#x27;type&#x27;    =&gt; &#x27;switcher&#x27;,</span><br><span class="line">    &#x27;title&#x27;   =&gt; &#x27;关闭筛选&#x27;,</span><br><span class="line">    &#x27;label&#x27;   =&gt; &#x27;关闭当前类目下的高级筛选功能&#x27;,</span><br><span class="line">    &#x27;default&#x27; =&gt; false,</span><br><span class="line">),</span><br><span class="line"></span><br><span class="line">// array(</span><br><span class="line">//     &#x27;id&#x27;      =&gt; &#x27;is_thumb_px&#x27;,</span><br><span class="line">//     &#x27;type&#x27;    =&gt; &#x27;switcher&#x27;,</span><br><span class="line">//     &#x27;title&#x27;   =&gt; &#x27;自定义分类下文章缩略图宽高&#x27;,</span><br><span class="line">//     &#x27;label&#x27;   =&gt; &#x27;因前台是自适应布局，具体宽高比例前台刷新观察，这里的宽高是图片裁剪真实宽高,在纯分类页面和首页单独分类模块有效&#x27;,</span><br><span class="line">//     &#x27;default&#x27; =&gt; false,</span><br><span class="line">// ),</span><br><span class="line">// array(</span><br><span class="line">//     &#x27;id&#x27;         =&gt; &#x27;thumb_px&#x27;,</span><br><span class="line">//     &#x27;type&#x27;       =&gt; &#x27;dimensions&#x27;,</span><br><span class="line">//     &#x27;title&#x27;      =&gt; &#x27;缩略图宽高&#x27;,</span><br><span class="line">//     &#x27;default&#x27;    =&gt; array(</span><br><span class="line">//         &#x27;width&#x27;  =&gt; &#x27;300&#x27;,</span><br><span class="line">//         &#x27;height&#x27; =&gt; &#x27;200&#x27;,</span><br><span class="line">//         &#x27;unit&#x27;   =&gt; &#x27;px&#x27;,</span><br><span class="line">//     ),</span><br><span class="line">//     &#x27;dependency&#x27; =&gt; array(&#x27;is_thumb_px&#x27;, &#x27;==&#x27;, &#x27;true&#x27;),</span><br><span class="line">// ),</span><br><span class="line"></span><br><span class="line">array(</span><br><span class="line">    &#x27;id&#x27;          =&gt; &#x27;archive_single_style&#x27;,</span><br><span class="line">    &#x27;type&#x27;        =&gt; &#x27;select&#x27;,</span><br><span class="line">    &#x27;title&#x27;       =&gt; &#x27;侧边栏&#x27;,</span><br><span class="line">    &#x27;placeholder&#x27; =&gt; &#x27;&#x27;,</span><br><span class="line">    &#x27;options&#x27;     =&gt; array(</span><br><span class="line">        &#x27;none&#x27;  =&gt; &#x27;无&#x27;,</span><br><span class="line">        &#x27;right&#x27; =&gt; &#x27;右侧&#x27;,</span><br><span class="line">        &#x27;left&#x27;  =&gt; &#x27;左侧&#x27;,</span><br><span class="line">    ),</span><br><span class="line">    &#x27;default&#x27;     =&gt; _cao(&#x27;archive_single_style&#x27;),</span><br><span class="line">),</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">array(</span><br><span class="line">    &#x27;id&#x27;      =&gt; &#x27;is_no_archive_filter&#x27;,</span><br><span class="line">    &#x27;type&#x27;    =&gt; &#x27;switcher&#x27;,</span><br><span class="line">    &#x27;title&#x27;   =&gt; &#x27;关闭筛选&#x27;,</span><br><span class="line">    &#x27;label&#x27;   =&gt; &#x27;关闭当前类目下的高级筛选功能&#x27;,</span><br><span class="line">    &#x27;default&#x27; =&gt; false,</span><br><span class="line">),</span><br><span class="line"></span><br><span class="line"> array(</span><br><span class="line">     &#x27;id&#x27;      =&gt; &#x27;is_thumb_px&#x27;,</span><br><span class="line">     &#x27;type&#x27;    =&gt; &#x27;switcher&#x27;,</span><br><span class="line">     &#x27;title&#x27;   =&gt; &#x27;自定义分类下文章缩略图宽高&#x27;,</span><br><span class="line">     &#x27;label&#x27;   =&gt; &#x27;因前台是自适应布局，具体宽高比例前台刷新观察，这里的宽高是图片裁剪真实宽高,在纯分类页面和首页单独分类模块有效&#x27;,</span><br><span class="line">     &#x27;default&#x27; =&gt; false,</span><br><span class="line"> ),</span><br><span class="line"> array(</span><br><span class="line">     &#x27;id&#x27;         =&gt; &#x27;thumb_px&#x27;,</span><br><span class="line">     &#x27;type&#x27;       =&gt; &#x27;dimensions&#x27;,</span><br><span class="line">     &#x27;title&#x27;      =&gt; &#x27;缩略图宽高&#x27;,</span><br><span class="line">     &#x27;default&#x27;    =&gt; array(</span><br><span class="line">         &#x27;width&#x27;  =&gt; &#x27;300&#x27;,</span><br><span class="line">         &#x27;height&#x27; =&gt; &#x27;200&#x27;,</span><br><span class="line">         &#x27;unit&#x27;   =&gt; &#x27;px&#x27;,</span><br><span class="line">     ),</span><br><span class="line">     &#x27;dependency&#x27; =&gt; array(&#x27;is_thumb_px&#x27;, &#x27;==&#x27;, &#x27;true&#x27;),</span><br><span class="line"> ),</span><br><span class="line"></span><br><span class="line">array(</span><br><span class="line">    &#x27;id&#x27;          =&gt; &#x27;archive_single_style&#x27;,</span><br><span class="line">    &#x27;type&#x27;        =&gt; &#x27;select&#x27;,</span><br><span class="line">    &#x27;title&#x27;       =&gt; &#x27;侧边栏&#x27;,</span><br><span class="line">    &#x27;placeholder&#x27; =&gt; &#x27;&#x27;,</span><br><span class="line">    &#x27;options&#x27;     =&gt; array(</span><br><span class="line">        &#x27;none&#x27;  =&gt; &#x27;无&#x27;,</span><br><span class="line">        &#x27;right&#x27; =&gt; &#x27;右侧&#x27;,</span><br><span class="line">        &#x27;left&#x27;  =&gt; &#x27;左侧&#x27;,</span><br><span class="line">    ),</span><br><span class="line">    &#x27;default&#x27;     =&gt; _cao(&#x27;archive_single_style&#x27;),</span><br><span class="line">),</span><br></pre></td></tr></table></figure>
+<p>打开/wp-content/themes/ripro-v2/inc/template-tags.php<br>搜索：根据模式输出缩略图img 延迟加载html标签，将下边代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">if (!function_exists(&#x27;_get_post_media&#x27;)) &#123;</span><br><span class="line">    function _get_post_media($post = null, $size = &#x27;thumbnail&#x27;,$video = true) &#123;</span><br><span class="line">        if (empty($post)) &#123;</span><br><span class="line">            global $post;</span><br><span class="line">        &#125;elseif (is_numeric($post)) &#123;</span><br><span class="line">            $post = get_post($post);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        $_size_px = _get_post_thumbnail_size();</span><br><span class="line"></span><br><span class="line">        $src = _get_post_thumbnail_url($post, $size);</span><br></pre></td></tr></table></figure>
+<p>替换成即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">if (!function_exists(&#x27;_get_post_media&#x27;)) &#123;</span><br><span class="line">    function _get_post_media($post = null, $size = &#x27;thumbnail&#x27;,$video = true) &#123;</span><br><span class="line">        if (empty($post)) &#123;</span><br><span class="line">            global $post;</span><br><span class="line">        &#125;</span><br><span class="line">        $category = get_the_category($post-&gt;ID);</span><br><span class="line">        $catid = $category[0]-&gt;term_id;</span><br><span class="line">        if (get_term_meta($catid, &#x27;is_thumb_px&#x27;, true)) &#123;</span><br><span class="line">            $_size_px = get_term_meta($catid, &#x27;thumb_px&#x27;, true); //缩略图高度</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            $_size_px = _get_post_thumbnail_size();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        $src = _get_post_thumbnail_url($post, $size);</span><br></pre></td></tr></table></figure>
+<p>更改后台分类多了一个选项：</p>
+<p><img src="https://gitee.com/musangking/blogImage/raw/master/blogImage/202210021522149.png"></p>
+
+      
+      
+    <!-- 《添加版权声明 -->
+    
+      <!-- 《添加版权声明 -->
+<!--添加版权声明https://github.com/JoeyBling/hexo-theme-yilia-plus/commit/c1215e132f6d5621c5fea83d3c4f7ccbcca074a3-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <div class="declare" hidden="hidden"></div>
+
+<!-- 添加版权声明》 -->
+    
+    <!-- 添加版权声明》 -->
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/archives/d17dfafe.html">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-解决hexo deploy时出现的警告：LF will be replaced by CRLF" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
