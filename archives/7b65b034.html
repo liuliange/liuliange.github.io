@@ -7,18 +7,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://liuliange.github.io">
-  <title>榴莲哥</title>
+  <title>RiproV2纯代码美化色彩云标签 | 榴莲哥</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="榴莲哥">
-<meta property="og:url" content="https://liuliange.github.io/404.html">
+  <meta name="description" content="WordPress 自带的标签云是一个很实用的小工具。站长可以通过标签对具有相同关健词的文章进行检索分类，利于访客查找相关文章。博主使用的​​RiproV2主题​​​的标签云虽然有颜色，但是也不是彩色的。所以想到了自定义代码实现​​圆角彩色标签云​​。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RiproV2纯代码美化色彩云标签">
+<meta property="og:url" content="https://liuliange.github.io/archives/7b65b034.html">
 <meta property="og:site_name" content="榴莲哥">
+<meta property="og:description" content="WordPress 自带的标签云是一个很实用的小工具。站长可以通过标签对具有相同关健词的文章进行检索分类，利于访客查找相关文章。博主使用的​​RiproV2主题​​​的标签云虽然有颜色，但是也不是彩色的。所以想到了自定义代码实现​​圆角彩色标签云​​。">
 <meta property="og:locale">
-<meta property="article:published_time" content="2021-10-13T10:25:13.225Z">
-<meta property="article:modified_time" content="2021-10-13T10:24:48.072Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/liuliange/blogPicture/blogPicture/202210281428248.png">
+<meta property="article:published_time" content="2022-10-28T06:13:27.000Z">
+<meta property="article:modified_time" content="2022-10-28T06:37:08.351Z">
 <meta property="article:author" content="榴莲哥">
 <meta property="article:tag" content="前端,javascript,jquery,html5,开发者,程序猿,编程,代码,开源,IT网站,Developer,Geek,html,css,css3,用户体验">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/liuliange/blogPicture/blogPicture/202210281428248.png">
   
     <link rel="alternative" href="/atom.xml" title="榴莲哥" type="application/atom+xml">
   
@@ -184,8 +188,52 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-RiproV2纯代码美化色彩云标签" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      RiproV2纯代码美化色彩云标签
+    </h1>
+  
+
+        
+        
+	<!-- 不蒜子统计 -->
+	<span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+		  <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+	</span>
+
+<a href="/archives/7b65b034.html" class="archive-article-date">
+  	<time datetime="2022-10-28T06:13:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-10-28</time>
+</a>
+        <!-- 开始添加字数统计-->
+
+  <div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+      <span class="post-meta-item-text">  字数统计: </span>
+      <span class="post-count">379字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="fa fa-clock-o" aria-hidden="true"></i>
+      <span class="post-meta-item-text">  阅读时长: </span>
+      <span class="post-count">1分</span>
+    </span>
+  </span>
+</div>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  
+<!-- 添加完成 -->
+        
+      </header>
     
     <!-- 添加导航目录内容 -->
     
@@ -193,9 +241,33 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        </html>
+        <p>WordPress 自带的标签云是一个很实用的小工具。站长可以通过标签对具有相同关健词的文章进行检索分类，利于访客查找相关文章。博主使用的​​RiproV2主题​​​的标签云虽然有颜色，但是也不是彩色的。所以想到了自定义代码实现​​圆角彩色标签云​​。 <span id="more"></span></p>
+<p>使用方法：在当前主题目录下面的​​functions.php​​里面加入以下代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">/***圆角背景色标签***/</span><br><span class="line">function colorCloud($text) &#123;  </span><br><span class="line">$text = preg_replace_callback(&#x27;|&lt;a (.+?)&gt;|i&#x27;, &#x27;colorCloudCallback&#x27;, $text);  </span><br><span class="line">return $text;  </span><br><span class="line">&#125;  </span><br><span class="line">function colorCloudCallback($matches) &#123;  </span><br><span class="line">$text = $matches[1];  </span><br><span class="line">$colors = array(&#x27;48D1CC&#x27;,&#x27;a26ff9&#x27;,&#x27;fb7da9&#x27;,&#x27;666&#x27;,&#x27;19B5FE&#x27;,&#x27;ff5e5c&#x27;,&#x27;ffbb50&#x27;,&#x27;1ac756&#x27;);  </span><br><span class="line">$color=$colors[dechex(rand(0,7))]; </span><br><span class="line">$pattern = &#x27;/style=(\&#x27;|\&quot;)(.*)(\&#x27;|\&quot;)/i&#x27;;  </span><br><span class="line">$text = preg_replace($pattern, &quot;style=\&quot;display: inline-block; *display: inline; *zoom: 1; color: #fff; padding: 1px 3px; margin: 0 3px 3px 0; background-color: #&#123;$color&#125;; border-radius: 3px; -webkit-transition: background-color .4s linear; -moz-transition: background-color .4s linear; transition: background-color .4s linear;\&quot;&quot;, $text);  </span><br><span class="line">$pattern = &#x27;/style=(\&#x27;|\&quot;)(.*)(\&#x27;|\&quot;)/i&#x27;;  </span><br><span class="line">return &quot;&lt;a $text&gt;&quot;;  </span><br><span class="line">&#125;  </span><br><span class="line">add_filter(&#x27;wp_tag_cloud&#x27;, &#x27;colorCloud&#x27;, 1);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>然后到网站后台，依次点击​​外观​​——​​小工具​​——​​标签云​​，添加以后就可以看到圆角彩色标签云了。</p>
+<p>默认的就已经非常漂亮了，如果不喜欢也可以自己对照​​rgb颜色表​​修改：<br><code>colors = array(&#39;48D1CC&#39;,&#39;a26ff9&#39;,&#39;fb7da9&#39;,&#39;666&#39;,&#39;19B5FE&#39;,&#39;ff5e5c&#39;,&#39;ffbb50&#39;,&#39;1ac756&#39;);  </code></p>
+<p>效果如下图：<br><img src="https://cdn.jsdelivr.net/gh/liuliange/blogPicture/blogPicture/202210281428248.png"></p>
+<p>你的标签云就变彩色了，是吧！！！</p>
+
       
       
+        
+          <div class="essayending">
+            <div>
+             <div style="text-align:center;color: #ccc;font-size:22px;">
+             <br/>
+             <br/>
+             -------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------
+             <br/>
+             <br/>
+              <br/>
+              <br/>
+             </div>
+            </div>
+          </div>
+          
+ 
+   
     <!-- 《添加版权声明 -->
     
       <!-- 《添加版权声明 -->
@@ -204,7 +276,33 @@
 
 <!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明 -->
 
-  <div class="declare" hidden="hidden"></div>
+  <div class="declare">
+    <strong class="author">本文作者：</strong>
+    
+      榴莲哥
+    
+    <br>
+    <strong class="create-time">发布时间：</strong>
+    2022-10-28 14:10:00
+    <br>
+    <strong class="update-time">最后更新：</strong>
+    2022-10-28 14:10:35
+    <br>
+    <strong class="article-titles">本文标题：</strong>
+    <a href="https://liuliange.github.io/archives/7b65b034.html" title="RiproV2纯代码美化色彩云标签" target="_blank">RiproV2纯代码美化色彩云标签</a>
+    <br>
+    <strong class="article-url">本文链接：</strong>
+    <a href="https://liuliange.github.io/archives/7b65b034.html" title="RiproV2纯代码美化色彩云标签" target="_blank">https://liuliange.github.io/archives/7b65b034.html</a>
+    <br>
+    <strong class="copyright">版权声明：</strong>
+    本作品采用
+    <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议">CC BY-NC-SA 4.0</a>
+    许可协议进行许可。转载请注明出处！
+    
+      <br>
+      <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"/></a>
+    
+  </div>
 
 <!-- 添加版权声明》 -->
     
@@ -247,6 +345,21 @@
       
       
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Ritheme//" class="article-tag-list-link color3">Ritheme</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Ritheme/Wordpress//" class="article-tag-list-link color5">Wordpress</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -296,7 +409,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://liuliange.github.io/404.html" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://liuliange.github.io/archives/7b65b034.html" alt="微信分享二维码">
     </div>
 </div>
 
@@ -308,6 +421,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/archives/d17dfafe.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">RiProV2自定义分类缩略图尺寸</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -460,7 +583,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
