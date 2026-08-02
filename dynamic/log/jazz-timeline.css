@@ -1,0 +1,97 @@
+/* 纯 CSS 仿 jazz-timeline 单侧时间线（无外部依赖） */
+.jazz-timeline-wrapper {
+	max-width: 860px;
+	margin: 20px auto 40px;
+	padding: 0 16px;
+}
+.jazz-timeline {
+	position: relative;
+	padding-left: 110px;
+}
+.jazz-timeline:before {
+	content: '';
+	position: absolute;
+	left: 39px;
+	top: 6px;
+	bottom: 6px;
+	width: 2px;
+	background: #e5e5e5;
+}
+.jazz-timeline .timeline-post {
+	position: relative;
+	margin-bottom: 30px;
+}
+.jazz-timeline .timeline-post:last-child {
+	margin-bottom: 0;
+}
+.jazz-timeline .timeline-icon {
+	position: absolute;
+	left: -110px;
+	top: 0;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	line-height: 1.1;
+	box-shadow: 0 0 0 5px #fff;
+	text-align: center;
+}
+.jazz-timeline .timeline-icon .day {
+	font-size: 24px;
+	font-weight: 700;
+}
+.jazz-timeline .timeline-icon .ym {
+	font-size: 11px;
+	margin-top: 2px;
+}
+.jazz-timeline .timeline-bar {
+	display: none;
+}
+.jazz-timeline .timeline-content {
+	background: #fff;
+	border: 1px solid #eee;
+	border-radius: 8px;
+	padding: 16px 20px;
+	box-shadow: 0 1px 4px rgba(0,0,0,.05);
+}
+.jazz-timeline .content-title {
+	font-size: 16px;
+	font-weight: 600;
+	color: #333;
+	margin: 0 0 10px;
+}
+.jazz-timeline .content-details {
+	font-size: 14px;
+	line-height: 1.7;
+	color: #555;
+	word-break: break-word;
+}
+.jazz-timeline .content-details p {
+	margin: 0;
+}
+/* 彩色图标交替 */
+.jazz-timeline .timeline-post:nth-child(5n+1) .timeline-icon { background: #08c; }
+.jazz-timeline .timeline-post:nth-child(5n+2) .timeline-icon { background: #e74c3c; }
+.jazz-timeline .timeline-post:nth-child(5n+3) .timeline-icon { background: #f39c12; }
+.jazz-timeline .timeline-post:nth-child(5n+4) .timeline-icon { background: #27ae60; }
+.jazz-timeline .timeline-post:nth-child(5n+5) .timeline-icon { background: #9b59b6; }
+.timeline-loading {
+	color: #cdcdcd;
+	padding: 30px;
+	text-align: center;
+}
+@media screen and (max-width: 600px) {
+	.jazz-timeline { padding-left: 84px; }
+	.jazz-timeline:before { left: 31px; }
+	.jazz-timeline .timeline-icon {
+		left: -84px;
+		width: 64px;
+		height: 64px;
+	}
+	.jazz-timeline .timeline-icon .day { font-size: 20px; }
+	.jazz-timeline .timeline-icon .ym { font-size: 10px; }
+}
