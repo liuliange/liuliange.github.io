@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://liuliange.github.io/tages/index.html</loc>
+    
+    <lastmod>2026-08-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://liuliange.github.io/log/index.html</loc>
+    
+    <lastmod>2026-08-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://liuliange.github.io/tools/index.html</loc>
     
     <lastmod>2026-08-02</lastmod>
@@ -20,24 +38,6 @@
   </url>
   
   <url>
-    <loc>https://liuliange.github.io/log/index.html</loc>
-    
-    <lastmod>2026-08-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://liuliange.github.io/tages/index.html</loc>
-    
-    <lastmod>2026-08-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://liuliange.github.io/dynamic/videos/index.html</loc>
     
     <lastmod>2026-08-02</lastmod>
@@ -47,25 +47,7 @@
   </url>
   
   <url>
-    <loc>https://liuliange.github.io/dynamic/log/index.html</loc>
-    
-    <lastmod>2026-08-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://liuliange.github.io/dynamic/photos/data.json</loc>
-    
-    <lastmod>2026-08-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://liuliange.github.io/dynamic/photos/index.html</loc>
     
     <lastmod>2026-08-02</lastmod>
     
@@ -92,6 +74,24 @@
   </url>
   
   <url>
+    <loc>https://liuliange.github.io/dynamic/photos/index.html</loc>
+    
+    <lastmod>2026-08-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://liuliange.github.io/dynamic/log/index.html</loc>
+    
+    <lastmod>2026-08-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://liuliange.github.io/dynamic/index.html</loc>
     
     <lastmod>2026-08-02</lastmod>
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://liuliange.github.io/categories/index.html</loc>
+    <loc>https://liuliange.github.io/dynamic/log/data.json</loc>
     
     <lastmod>2026-08-02</lastmod>
     
@@ -110,7 +110,7 @@
   </url>
   
   <url>
-    <loc>https://liuliange.github.io/dynamic/log/data.json</loc>
+    <loc>https://liuliange.github.io/categories/index.html</loc>
     
     <lastmod>2026-08-02</lastmod>
     
